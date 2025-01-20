@@ -202,7 +202,23 @@
             </table>
 
 
-            <?php echo $this->Html->link(('Download PDF'),['action'=>'pdf', $booking->id], ['class'=>'btn btn-sm btn-outline-danger', 'escapeTitle' => false]); ?>
+                <?php
+
+                if ($booking->status =='0') {
+                    echo $this->Html->link(
+                        'Download PDF',
+                        ['action' => 'pdf', $booking->id],
+                        ['class' => 'btn btn-sm btn-outline-danger', 'escapeTitle' => false]
+                    );
+                } else {
+                    echo $this->Html->tag(
+                        'button',
+                        'Download PDF',
+                        ['class' => 'btn btn-sm btn-outline-danger', 'disabled' => true]
+                    );
+                }
+                ?>
+
         </div>
       </div>
 	</div>
