@@ -57,6 +57,8 @@ class VehiclesTable extends Table
 		$this->searchManager()
 			->value('id')
             ->value('model')
+            ->value('manufacturer')
+            ->value('registration_no')
             ->value('color')
             ->value('type')
             ->value('status')

@@ -7,7 +7,7 @@
 <!--Header-->
 <div class="row text-body-secondary mb-3">
     <div class="col-10">
-        <h1 class="my-0 page_title text-primary"><?php echo $title; ?></h1>
+        <h1 class="my-0 page_title"><?php echo $title; ?></h1>
         <h6 class="sub_title text-secondary"><?php echo $system_name; ?></h6>
     </div>
     <div class="col-2 text-end">
@@ -29,8 +29,8 @@
 <div class="line mb-3 border-primary" style="border-width: 2px; border-radius: 5px;"></div>
 <!--/Header-->
 
-<div class="card mb-3 shadow-sm" style="background-color: #e3f2fd; border-color: #90caf9; border-radius: 10px;">
-    <div class="card-header text-white bg-gradient-primary" style="background: linear-gradient(90deg, #1565c0, #42a5f5);">
+<div class="card mb-3 shadow-sm">
+    <div class="card-header text-white">
         <h5 class="mb-0">Edit Vehicle</h5>
     </div>
     <div class="card-body text-secondary">
@@ -39,25 +39,25 @@
         <fieldset>
             <div class="row mb-2">
                 <div class="col-md-6">
-                    <?= $this->Form->control('model', ['label' => ['text' => 'Model', 'class' => 'form-label text-primary'], 'class' => 'form-control']); ?>
+                    <?= $this->Form->control('model', ['label' => ['text' => 'Model', 'class' => 'form-label'], 'class' => 'form-control']); ?>
                 </div>
                 <div class="col-md-6">
-                    <?= $this->Form->control('manufacturer', ['label' => ['text' => 'Manufacturer', 'class' => 'form-label text-primary'], 'class' => 'form-control']); ?>
+                    <?= $this->Form->control('manufacturer', ['label' => ['text' => 'Manufacturer', 'class' => 'form-label'], 'class' => 'form-control']); ?>
                 </div>
             </div>
             <div class="row mb-2">
                 <div class="col-md-6">
-                    <?= $this->Form->control('registration_no', ['label' => ['text' => 'Registration No.', 'class' => 'form-label text-primary'], 'class' => 'form-control']); ?>
+                    <?= $this->Form->control('registration_no', ['label' => ['text' => 'Registration No.', 'class' => 'form-label'], 'class' => 'form-control']); ?>
                 </div>
                 <div class="col-md-6">
-                    <?= $this->Form->control('color', ['label' => ['text' => 'Color', 'class' => 'form-label text-primary'], 'class' => 'form-control']); ?>
+                    <?= $this->Form->control('color', ['label' => ['text' => 'Color', 'class' => 'form-label'], 'class' => 'form-control']); ?>
                 </div>
             </div>
 
             <div class="row mb-2">
 				<div class="col-md-6">
 					<?= $this->Form->control('type', [
-						'label' => ['text' => 'Vehicle Type', 'class' => 'form-label text-primary'],
+						'label' => ['text' => 'Vehicle Type', 'class' => 'form-label'],
 						'type' => 'select', 
 						'options' => ['Car' => 'Car', 'Motorcycle' => 'Motorcycle'],
 						'empty' => 'Select Vehicle Type',
@@ -66,7 +66,7 @@
 				</div>
 
                 <div class="col-md-6">
-                    <?= $this->Form->control('rate_perhour', ['label' => ['text' => 'Rate per Hour', 'class' => 'form-label text-primary'], 'class' => 'form-control']); ?>
+                    <?= $this->Form->control('rate_perhour', ['label' => ['text' => 'Rate per Hour', 'class' => 'form-label'], 'class' => 'form-control']); ?>
                 </div>
             </div>
             
@@ -74,20 +74,20 @@
 				<div class="col-md-6">
 					<?= $this->Form->control('image', [
 						'type' => 'file', 
-						'label' => ['text' => 'Upload Image', 'class' => 'form-label text-primary'],
+						'label' => ['text' => 'Upload Image', 'class' => 'form-label'],
 						'class' => 'form-control'
 					]); ?>
 				</div>
 
                 <div class="col-md-6">
-                    <?= $this->Form->control('status', ['label' => ['text' => 'Status', 'class' => 'form-label text-primary'], 'class' => 'form-control']); ?>
+                    <?= $this->Form->control('status', ['label' => ['text' => 'Status', 'class' => 'form-label'], 'class' => 'form-control']); ?>
                 </div>
             </div>
             
         </fieldset>
         <div class="text-end mt-3">
             <?= $this->Form->button('Reset', ['type' => 'reset', 'class' => 'btn btn-outline-warning me-2']); ?>
-            <?= $this->Form->button(__('Submit'), ['type' => 'submit', 'class' => 'btn btn-primary']); ?>
+            <?= $this->Form->button(__('Submit'), ['type' => 'submit', 'class' => 'btn btn-outline-primary']); ?>
         </div>
         <?= $this->Form->end() ?>
     </div>

@@ -363,8 +363,9 @@ const status = new Chart(ctx_2, {
 				<fieldset>
 					<div class="mb-1"><?php echo $this->Form->control('id',['required' => false]); ?></div>
 					<div class="mb-1"><?php echo $this->Form->control('model', ['required' => false]); ?></div>
+					<div class="mb-1"><?php echo $this->Form->control('manufacturer', ['required' => false]); ?></div>
+					<div class="mb-1"><?php echo $this->Form->control('registration_no', ['required' => false]); ?></div>
 					<div class="mb-1"><?php echo $this->Form->control('color', ['required' => false]); ?></div>
-					<div class="mb-1"><?php echo $this->Form->control('type', ['required' => false]); ?></div>
 					<div class="mb-1"><?php 
 						echo $this->Form->label('Vehicle Status');
 						echo '<br/>';
